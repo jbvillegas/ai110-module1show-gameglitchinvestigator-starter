@@ -1,16 +1,8 @@
 import random
 import streamlit as st
-from logic_utils import get_range_for_difficulty, parse_guess, check_guess, update_score
-
-
 # FIX: Refactored core game logic into logic_utils.py using Claude Haiku 4.5.
 # This separates business logic from Streamlit UI so functions can be unit tested.
-from logic_utils import (
-    get_range_for_difficulty,
-    parse_guess,
-    check_guess,
-    update_score,
-)
+from logic_utils import get_range_for_difficulty, parse_guess, check_guess, update_score
 
 st.set_page_config(page_title="Glitchy Guesser", page_icon="🎮")
 
